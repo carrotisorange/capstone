@@ -1,9 +1,9 @@
 {% extends 'layouts/base-fullscreen.html' %}
 
-{% block title %} Register {% endblock title %}
+{% block title %} Register {% endblock %}
 
 <!-- Specific CSS goes HERE -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}{% endblock %}
 
 {% block content %}
 
@@ -12,7 +12,7 @@
     <!-- Table -->
     <div class="row justify-content-center">
       <div class="col-lg-6 col-md-8">
-        <div class="card bg-secondary border-0">
+         <div class="card shadow-lg rounded">
 <!--          <div class="card-header bg-transparent pb-5">-->
 <!--            <div class="text-muted text-center mt-2 mb-4"><small>Sign up with</small></div>-->
 <!--            <div class="text-center">-->
@@ -34,7 +34,7 @@
               <div class="form-group">
                 <div class="input-group input-group-merge input-group-alternative mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+                    <span class="input-group-text"><i class="ni ni-hat-3 text-blue"></i></span>
                   </div>
                   <input class="form-control" placeholder="Name" type="text">
                 </div>
@@ -42,7 +42,7 @@
               <div class="form-group">
                 <div class="input-group input-group-merge input-group-alternative mb-3">
                   <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    <span class="input-group-text"><i class="ni ni-email-83 text-blue"></i></span>
                   </div>
                   <input class="form-control" placeholder="Email" type="email">
                 </div>
@@ -50,7 +50,7 @@
               <div class="form-group">
                 <div class="input-group input-group-merge input-group-alternative">
                   <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    <span class="input-group-text"><i class="ni ni-lock-circle-open text-blue"></i></span>
                   </div>
                   <input class="form-control" placeholder="Password" type="password">
                 </div>
@@ -72,20 +72,12 @@
             </form>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-6">
-            <a href="/login" class="text-light"><small>Login</small></a>
-          </div>
-<!--          <div class="col-6 text-right">-->
-<!--            <a href="/" class="text-light"><small>Dashboard</small></a>-->
-<!--          </div>-->
-        </div>
 
       </div>
     </div>
   </div>
 
-{% endblock content %}
+{% endblock %}
 
 <!-- Specific JS goes HERE -->
 {% block javascripts %}
@@ -93,4 +85,4 @@
   <script src="/static/assets/vendor/chart.js/dist/Chart.min.js"></script>
   <script src="/static/assets/vendor/chart.js/dist/Chart.extension.js"></script>
 
-{% endblock javascripts %}
+{% endblock %}
