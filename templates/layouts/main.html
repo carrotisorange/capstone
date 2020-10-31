@@ -39,15 +39,18 @@
 
 <body class="">
 
-  {% include "includes/sidenav.html" %}
-
+  {% block sidenav %} {% endblock %}
   <div class="main-content" id="panel">
 
-    {% block content %}{% endblock content %}
+    {% block content %}{% endblock %}
 
   </div>
 
+
+
   {% include "includes/scripts.html" %}
+  {% include "includes/logout.html" %}
+
 
   <!-- Specific JS goes HERE -->
   {% block javascripts %}{% endblock %}

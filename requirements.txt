@@ -1,1 +1,4 @@
-flask
+flask~=1.1.2
+
+pandas~=1.1.3
+werkzeug~=1.0.1

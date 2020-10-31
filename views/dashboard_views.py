@@ -24,12 +24,7 @@ def profile():
     return {}
 
 
-@blueprint.route('/change-password')
-@response(template_file='/html/change-password.html')
-def change_password():
-    return {}
-
-
+#LOGOUT USER
 @blueprint.route('/logout')
 def logout():
-    return {}
+    return 'session has ended!'
