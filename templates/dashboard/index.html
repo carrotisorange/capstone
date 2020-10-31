@@ -69,7 +69,7 @@
         <div class="card-header">
           <div class="row align-items-center">
             <div class="col-8">
-              <h3 class="mb-0">Start screening your idea! </h3>
+              <h3 class="mb-0">Start screening your idea now! </h3>
             </div>
             {#<div class="col-4 text-right">
               <a href="#!" class="btn btn-sm btn-primary">Settings</a>
@@ -89,18 +89,42 @@
                 </div>
 
               </div>
+                <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="form-control-label" for="input-first-name">Product category</label>
+                      <select id="input-first-name" class="form-control" required>
+                          <option value="">Please select one</option>
+                          <option value="Automotive and Transport">Automotive and Transport</option>
+                          <option value="Business and Finance">Business and Finance</option>
+                          <option value="Chemicals and Materials">Chemicals and Materials</option>
+                          <option value="Consumer Goods and Services">Consumer Goods and Services</option>
+                          <option value="Energy and Natural Resources">Energy and Natural Resources</option>
+                          <option value="Food and Beverage">Food and Beverage</option>
+                          <option value="Government and Public Sector">Government and Public Sector</option>
+                          <option value="Healthcare">Healthcare</option>
+                          <option value="Manufacturing and Construction">Manufacturing and Construction</option>
+                          <option value="Pharmaceuticals">Pharmaceuticals</option>
+                          <option value="Telecommunications and Computing">Telecommunications and Computing</option>
+
+                      </select>
+                  </div>
+                </div>
+
+              </div>
               <div class="row">
                 <div class="col-lg-12">
                   <div class="form-group">
-                    <label class="form-control-label" for="input-first-name">Product category name</label>
-                      <select id="input-first-name" class="form-control" required>
+                    <label class="form-control-label" for="input-first-name">Search terms</label>
+                      <input type="text" id="input-username" class="form-control" placeholder="#dedicationcake, #sweets, #minimalistic" value="" required>
+                      {#<select id="input-first-name" class="form-control" required>
                           <option value="">Please select one</option>
                           <option value="Beverage">Beverage</option>
                           <option value="Clothing">Clothing</option>
                           <option value="Food">Food</option>
                           <option value="Personal accessories">Personal accessories</option>
                           <option value="Others">Others</option>
-                      </select>
+                      </select>#}
                   </div>
                 </div>
 
@@ -115,7 +139,7 @@
                           <option value="">Please select one</option>
                           <option value="Facebook">Facebook</option>
                           <option value="Instagram">Instagram</option>
-                          <option value="Twitter">Twitter</option>
+                          <option value="Twitter" selected>Twitter</option>
                           <option value="Reddit">Reddit</option>
 
                     </select>
