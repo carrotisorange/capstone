@@ -1,10 +1,14 @@
-import pandas as pd
+import nltk
+from nltk.book import *
+
+dist = FreqDist(text7)
+
+vocab1 = dist.keys()
+
+freqwords = [w for w in vocab1 if len(w) > 5 and dist[w] > 100]
+
+print(freqwords)
 
 
-print(pd)
 
-
-text1 = 'Your feedback is important to us! Follow the link below and take a quick survey to help us serve you better in the future!'
-text2 = text1.lower().strip().split(' ')
-print(set(text2))
 

@@ -11,11 +11,7 @@
 <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
   <div class="scrollbar-inner">
     <!-- Brand -->
-    <div class="sidenav-header  align-items-center">
-      <a class="navbar-brand" href="/">
-      Capstone Project
-      </a>
-    </div>
+     {% include "includes/brand.html" %}
     <div class="navbar-inner">
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidenav-collapse-main">
@@ -85,30 +81,30 @@
                     <th>Market growth</th>
                     <th>Market trends</th>
                     <th>Market profitability</th>
-                    <th>Total score</th>
+                    <th>Screening score</th>
                       <th>Verdict</th>
                   </tr>
                 </thead>
                 <tbody>
                  <tr>
                       <th>
-                        1
+                          2.9%
                     </th>
                     <th>
-                        1
+                        20%
                     </th>
                     <th>
-                        1
+                        21%
                     </th>
                     <th>
-                     -1
+                     51%
                     </th>
 
                     <th>
-                      2
+                      4
                     </th>
                     <th>
-                        <button class="btn btn-success"><i class="fas fa-check-circle"></i> Accepted</button>
+                        <p class="text-success"><i class="fas fa-check-circle"></i> Accepted</p>
                     </th>
                   </tr>
 
@@ -155,11 +151,11 @@
                   <div class="row">
                     <div class="col">
                       <h5 class="card-title text-uppercase text-muted mb-0">TOTAL RETWEETS</h5>
-                      <span class="h2 font-weight-bold mb-0">2,356</span>
+                      <span class="h2 font-weight-bold mb-0">10,010</span>
                     </div>
                     <div class="col-auto">
                       <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
-                        <i class="fas fa-share"></i>
+                        <i class="fas fa-retweet"></i>
                       </div>
                     </div>
                   </div>
@@ -195,11 +191,6 @@
 
           </div>
 
-    <div class="row">
-    <div class="col">
-        <p class="text-dark">Market growth</p>
-    </div>
-</div>
       <div class="row">
                 <div class="col-xl-12">
           <div class="card bg-default">
@@ -207,7 +198,7 @@
               <div class="row align-items-center">
                 <div class="col">
 
-                  <h5 class="h3 text-white mb-0">Tweet rate x Stock price</h5>
+                  <h5 class="h3 text-white mb-0">Market growth</h5>
                 </div>
                 <div class="col">
                   <ul class="nav nav-pills justify-content-end">
@@ -237,13 +228,18 @@
           </div>
         </div>
 
-         {#      <div class="col-xl-4">
+
+      </div>
+
+          <div class="row">
+
+      <div class="col-xl-12">
           <div class="card">
             <div class="card-header bg-transparent">
               <div class="row align-items-center">
                 <div class="col">
-                  <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
-                  <h5 class="h3 mb-0">Total orders</h5>
+                  <h6 class="text-uppercase text-muted ls-1 mb-1"></h6>
+                  <h5 class="h3 mb-0">Market trends</h5>
                 </div>
               </div>
             </div>
@@ -254,23 +250,85 @@
               </div>
             </div>
           </div>
-        </div>#}
+        </div>
       </div>
-
- <div class="row">
-    <div class="col">
-        <p class="text-dark">Market trends</p>
-    </div>
-
-
-
-</div>
 
      <div class="row">
     <div class="col">
         <p class="text-dark">Market profitability</p>
     </div>
      </div>
+
+              <div class="row">
+
+            <div class="col-xl-4 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">POSITIVE</h5>
+                      <span class="h2 font-weight-bold mb-0">51%</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
+                        <i class="far fa-smile-beam"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    {#<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>#}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">negative</h5>
+                      <span class="h2 font-weight-bold mb-0">28%</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-danger text-white rounded-circle shadow">
+                        <i class="far fa-frown"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                    {#<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>#}
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-6">
+              <div class="card card-stats">
+                <!-- Card body -->
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="card-title text-uppercase text-muted mb-0">neutral</h5>
+                      <span class="h2 font-weight-bold mb-0">21%</span>
+                    </div>
+                    <div class="col-auto">
+                      <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
+                     <i class="far fa-meh"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="mt-3 mb-0 text-sm">
+                   {# <span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 3.48%</span>
+                    <span class="text-nowrap">Since last month</span>#}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
 {% endblock %}
 
