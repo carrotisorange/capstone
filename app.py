@@ -1,6 +1,6 @@
 import os
 import flask
-import data.db_sessions as db_sessions
+import data.db_session as db_sessions
 
 
 app = flask.Flask(__name__)

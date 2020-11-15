@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="988cb480-e4c6-41ad-ad45-14b90f0f49c1">
+    <data-source source="LOCAL" name="db" uuid="0212ef3a-7ece-41b1-80e2-6ac1a959076a">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
@@ -11,6 +11,18 @@
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.31.1/sqlite-jdbc-3.31.1.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="python.exe" uuid="bc6c2c98-48f7-4a83-a8bd-f55c8a363ebf">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$USER_HOME$/miniconda3/envs/capstone38/python.exe</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="python.exe [2]" uuid="973cbb45-1f77-4c2f-8c3f-b3ac88b76f97">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$USER_HOME$/miniconda3/envs/capstone38/python.exe</jdbc-url>
     </data-source>
   </component>
 </project>
